@@ -10,6 +10,8 @@
 
   - Built with HTML5, CSS3, JavaScript.
 
+  - Coded with Sublime Text 2 http://www.sublimetext.com/
+
   - HTML compiled using https://github.com/mojombo/jekyll
 
   - Poject awesomely managed with some http://gruntjs.com/
