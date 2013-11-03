@@ -1,0 +1,53 @@
+//
+// Functions
+// ========================================================================
+// _functions.scss
+// @version   2.0 | June 30th 2013
+// @packege   bonsai
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/bonsai
+// @license   MIT license
+//
+//  Built in Sass functions:
+//  http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+//
+
+//
+// Em
+// ========================================================================
+// em()
+// @param  {string} $px-value
+// @param  {string} $base-value
+// ======================================================================== //
+@function em($px_value, $base_value: $base__pixel_value) {
+  @return ($px_value / $base_value) * 1em;
+}
+
+
+
+//
+// Rhythm
+// ========================================================================
+// rhythm()
+// @param  {em}    $fontsize   | em unit value
+// @param  {float} $lineheight | float value
+// @return {em}    em unit value
+// ======================================================================== //
+
+@function rhythm($font_size, $line_height: $base__line_height) {
+  @return ($line_height + 0em) / $font_size + 0em;
+}
+
+
+
+//
+// Image URL
+// ========================================================================
+// image-url()
+// @param  {string} $image
+// @param  {string} $path
+// ======================================================================== //
+
+@function image-url($image, $path: $base__image_directory_path) {
+  @return url('#{$path}/#{$image}');
+}

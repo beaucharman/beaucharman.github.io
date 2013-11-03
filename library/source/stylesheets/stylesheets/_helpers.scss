@@ -1,0 +1,235 @@
+//
+// Helpers
+// ========================================================================
+// _helpers.scss
+// @version   2.0 | June 30th 2013
+// @packege   bonsai
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/bonsai
+// @license   MIT license
+//
+// Any modulated styles that help with cross browser compatibility and
+// user feedback. A good place for extends too.
+// thanks to http://html5boilerplate.com/
+//
+
+
+
+/* ========================================================================
+   Helpers
+   ======================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/**
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; /* IE 6/7 fallback */
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+
+
+
+/* Visibility and Accessibility
+   ======================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * The media object
+ */
+.media {
+  margin-top:0.75em;
+  margin-bottom: 0.75em;
+  clear: left;
+
+  &, .media--content {
+    overflow:hidden;
+    _overflow:visible;
+    zoom:1;
+  }
+
+  .media--figure {
+    float:left;
+    margin-right: 0.75em;
+
+    img {
+      /**
+       * If the media object is an image, make it
+       * display nicely.
+       */
+      display:block;
+    }
+  }
+}
+
+
+
+/* Position and Layout
+   ======================================================================== */
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-right,
+.float-left {
+
+  .float-collapse {
+    @include breakpoint($grid__float_breakpoint, max-width);
+  }
+}
+
+/**
+ * Collapsible horizontal list
+ */
+.list--horizontal {
+   list-style-type: none;
+
+   li {
+     margin-right: $base__spacing;
+     float: left;
+     &:last-child {
+       margin-right: 0;
+     }
+   }
+ }
+
+.list--collapse {
+
+  li {
+    @include breakpoint($grid__float_breakpoint, max-width) {
+      margin-top: $base__spacing / 2;
+      margin-bottom: $base__spacing / 2;
+      margin-right: 0;
+      float: none;
+    }
+  }
+}
+
+.list--no-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Notifications and alerts
+   ======================================================================== */
+
+/* Base alert styling */
+.alert {
+  background-color: $grey__lightest;
+  padding: $base__spacing;
+  border-left: 5px solid $grey__light;
+  margin: $base__vertical_rhythm 0;
+  font-weight: 400;
+  color: $grey__darkest;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/**
+ * Alert Variations style declarations
+ */
+@each $alert in $alerts {
+  .alert--#{nth($alert, 1)} {
+    color: darken(nth($alert, 2), 10%);
+    text-shadow: 0 1px 0 lighten(nth($alert, 2), 34%);
+    border-color: lighten(nth($alert, 2), 18%);
+    background-color: lighten(nth($alert, 2), 25%);
+
+    a {
+      &:link,
+      &:visited {
+        color: darken(nth($alert, 2), 10%);
+      }
+
+      &:hover {
+        color: darken(nth($alert, 2), 15%);
+      }
+
+      &:active {
+        color: lighten(nth($alert, 2), 5%);
+      }
+    }
+  }
+}
+
+
+
+// Visual and layout helpers
+// ======================================================================== /
+
+//
+// Clearfix | @extend %clearfix;
+// ========================================================================
+// Thank you http://nicolasgallagher.com/micro-clearfix-hack/
+//
+%clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

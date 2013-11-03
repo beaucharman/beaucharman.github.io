@@ -1,0 +1,219 @@
+//
+// Layout
+// ========================================================================
+// _layout.scss
+// @version   2.0 | June 30th 2013
+// @packege   bonsai
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/bonsai
+// @license   MIT license
+//
+// Grid layouts and any global layout styles.
+//
+
+
+
+/**
+ * Global border box sizing
+ */
+@if $global__border_box_sizing {
+  * {
+    @include box-sizing();
+  }
+}
+
+
+
+/* ========================================================================
+   Layout
+   ======================================================================== */
+
+/**
+ * Page wrap
+ */
+.page-wrap {  }
+
+
+
+/**
+ * Container - center aligned
+ */
+.container {
+  margin: 0 auto;
+  padding: $base__padding;
+  max-width: $base__max_width;
+}
+
+
+
+/**
+ * Rows
+ */
+.row {
+  @include make-row;
+}
+
+
+
+/**
+ * Column
+ */
+.column {
+  float: left;
+  width: 100%;
+  min-height: 1px; // Prevent columns from collapsing when empty
+  padding-left: $grid__column_padding; // Set inner padding as gutters instead of margin
+  padding-right: $grid__column_padding;
+  @include box-sizing(border-box); // Proper box-model (padding doesn't add to width)
+}
+
+.column--vertical-space {
+  margin-bottom: $grid__column_padding;
+}
+
+
+/**
+ * Common column declarations.
+ * ========================================================================
+ * These are example column class selectors,
+ * given there is a 12 column system in play.
+ */
+
+/* 1/12 */
+.grid--1 {
+  @include make-column(1);
+}
+
+/* 1/6 */
+.grid--2 {
+  @include make-column(2);
+}
+
+/* 4 colums | 1 fourth */
+.grid--3 {
+  @include make-column(3);
+}
+
+/* 3 colums | 1 third */
+.grid--4 {
+  @include make-column(4);
+}
+
+/*5/12 */
+.grid--5 {
+  @include make-column(5);
+}
+
+/* 2 columns | 1 half */
+.grid--6 {
+  @include make-column(6);
+}
+
+/* 7/12*/
+.grid--7 {
+  @include make-column(7);
+}
+
+/* 2 thirds column */
+.grid--8 {
+  @include make-column(8);
+}
+
+/* 3/4 column */
+.grid--9 {
+  @include make-column(9);
+}
+
+/* 5/6 column */
+.grid--10 {
+  @include make-column(10);
+}
+
+/* 11/12 column */
+.grid--11 {
+  @include make-column(11);
+}
+
+/* Full width column */
+.grid--12 {
+  @include make-column(12);
+}
+
+
+
+/**
+ * Common offset declarations
+ * ========================================================================
+ * Used in conjunction with .grid--#, and will add the allocated amount of
+ * columns of space to the left of the current column.
+ */
+.grid--offset--2 {
+  @include make-column-offset(2);
+}
+
+.grid--offset--3 {
+  @include make-column-offset(3);
+}
+
+.grid--offset--4 {
+  @include make-column-offset(4);
+}
+
+.grid--offset--6 {
+  @include make-column-offset(6);
+}
+
+.grid--offset--8 {
+  @include make-column-offset(8);
+}
+
+.grid--offset--9 {
+  @include make-column-offset(9);
+}
+
+
+
+/**
+ * Satic columns
+ * ====================================
+ * Static columns won't collapse at the
+ * allocated $grid--float-breakpoint
+ */
+.grid--static--6 {
+  @include make-column(6, false);
+}
+
+
+/**
+ * Cascading grid
+ * ====================================
+ * The following SCSS example shows the type of pattern that can be constructed
+ * to define a collapsible and cascading grid structure.
+ * The class name should illustrate that it is a cascading grid,
+ * and should define what grid form the element will take at each given breakpoint,
+ * (Mobile first, from left to right). Give a second parameter of false to override
+ * auto collapsing.
+ */
+.grid--cascade--12-6-3 {
+  @include make-column(12, false);
+
+  @include breakpoint($display__narrow) {
+    @include make-column(6, false);
+  }
+
+  @include breakpoint($display__medium) {
+    @include make-column(3, false);
+  }
+}
+
+.grid--cascade--6-4-2 {
+  @include make-column(6, false);
+
+  @include breakpoint($display__narrow) {
+    @include make-column(4, false);
+  }
+
+  @include breakpoint($display__medium) {
+    @include make-column(2, false);
+  }
+}

@@ -1,0 +1,195 @@
+//
+// Global
+// ========================================================================
+// _global.scss
+// @version   2.0 | June 30th 2013
+// @packege   bonsai
+// @author    Beau Charman | @beaucharman | http://www.beaucharman.me
+// @link      https://github.com/beaucharman/bonsai
+// @license   MIT license
+//
+// base / global / elements styles, core boilerplate styles.
+// This can include inline and block level elements, and thier basic styles.
+//
+
+
+
+/* ========================================================================
+   Global
+   ======================================================================== */
+
+::-moz-selection {
+  background: $base__selection__color;
+  text-shadow: none;
+}
+
+::selection {
+  background: $base__selection__color;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grey__light;
+  margin: $base__vertical_rhythm 0;
+  padding: 0;
+}
+
+
+
+/* ========================================================================
+   Text level elements
+   ======================================================================== */
+
+/* Images
+   ======================================================================== */
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.img--full-width {
+  width: 100%;
+}
+
+
+
+/* ========================================================================
+   Block level elements
+   ======================================================================== */
+
+/**
+ * Blockquotes
+ */
+.blockquote {
+  font-style: italic;
+  font-size: em($base__font_size__large);
+  border-left: 0.5em solid $brand_color__primary;
+  padding-left: $base__spacing;
+  margin: $base__vertical_rhythm 0;
+}
+
+/**
+ * Blockquote variations
+ */
+.blockquote--pull-left {
+  margin-right: $base__spacing;
+  @include breakpoint($display__medium) {
+    float: left;
+  }
+}
+
+.blockquote--pull-right {
+  margin-left: $base__spacing;
+  padding-left: 0;
+  padding-right: $base__spacing;
+  border-left: none;
+  border-right: 0.5em solid $brand_color__primary;
+  @include breakpoint($display__medium) {
+    float: right;
+  }
+}
+
+.blockquote--pull-left,
+.blockquote--pull-right {
+  @extend .flush--ceil;
+  @include breakpoint($display__medium) {
+    width: 45%;
+    margin-bottom: $base__spacing;
+  }
+}
+
+
+
+/**
+ * Source code
+ */
+pre,
+code,
+.code {
+  overflow: auto;
+}
+
+.code {
+  white-space: nowrap;
+  background-color: #eee;
+  padding: 0.25em 0.5em;
+  border: solid 1px #ddd;
+}
+
+pre,
+pre.code {
+  white-space: pre;
+}
+
+pre {
+  background-color: #444;
+  border-bottom: 1px solid #383838;
+  padding: $base__padding;
+}
+
+
+
+
+/**
+ * Miscellaneous elements
+ */
+iframe {
+  display: block;
+}
+
+
+
+/* Lists
+   ======================================================================== */
+
+/**
+ * Definition lists
+ */
+dl {
+
+  dd {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+}
+
+
+
+/**
+ * Ordered and unordered lists
+ */
+ul,
+ol {
+  padding-left: 1.75em;
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/**
+ * Tables
+ * ========================================================================
+ */
+
+table {
+  width: 100%;
+}
+
