@@ -31,13 +31,22 @@
      		padding-left: 0;
      	}
 
+     	.page-header .social-links__list {
+			margin-bottom: 0;
+     	}
+
      		.social-links__item--anchor, .social-links__item--anchor:link, .social-links__item--anchor:visited {
      			text-decoration: none;
      		}
 
 		.github-widget {
-			margin: 1.5em 0;
+			margin: 0.75em 0;
 		}
+
+			.github-widget .updated {
+				max-width: 50%;
+				line-height: 1.2 !important;
+			}
 
 			.github-box .github-box-download {
 				height: auto !important;
@@ -63,9 +72,9 @@
   </head>
   <body>
 
-  	<section class="container">
+  	<section class="page-wrap">
 
-  		<header>
+  		<header class="page-header container">
 			<h1 class="site-heading">Beau Charman</h1>
 			<p class="page-header__sub-title">Tech lead and front end web developer @twenty4_digital, musician, HTML/CSS/JavaScript lover, WordPress &amp; burrito enthusiast, amateur photographer.</p>
 
@@ -95,19 +104,39 @@
 			</ul>
   		</header>
 
-  		<main class="page-content">
+  		<main class="page-content container">
 
-		  	<div class="github-widget" data-repo="beaucharman/samurai"></div>
+  			<div class="row">
 
-		  	<div class="github-widget" data-repo="beaucharman/grunt-kickstarter"></div>
+  				<div class="column grid--6">
 
-		  	<div class="github-widget" data-repo="beaucharman/auto-acf-layouts"></div>
+			  		<div class="github-widget" data-repo="beaucharman/samurai"></div>
 
-		  	<div class="github-widget" data-repo="beaucharman/bonsai"></div>
+			  	</div>
+
+			  	<div class="column grid--6">
+
+				  	<div class="github-widget" data-repo="beaucharman/grunt-kickstarter"></div>
+
+				</div>
+
+				<div class="column grid--6">
+
+				  	<div class="github-widget" data-repo="beaucharman/auto-acf-layouts"></div>
+
+				</div>
+
+				<div class="column grid--6">
+
+				  	<div class="github-widget" data-repo="beaucharman/bonsai"></div>
+
+				</div>
+
+			</div>
 
 		</main>
 
-		<footer class="page-footer">
+		<footer class="page-footer container">
 
 			&copy; 2014 Beau Charman &lt;3
 
