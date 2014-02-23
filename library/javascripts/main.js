@@ -15,13 +15,13 @@
 ;(function ($) {
 
 	//http://jelled.com/instagram/lookup-user-id
-    var feed = new Instafeed({
-        clientId: '91b436e4dc99488681146c25e13fcc68',
-        accessToken: 'e6b12d77f85240828c1e2d6631d72ec6',
-        userId: 8385790,
-        get: 'user'
-    });
-    feed.run();
+    // var feed = new Instafeed({
+    //     clientId: '91b436e4dc99488681146c25e13fcc68',
+    //     accessToken: 'e6b12d77f85240828c1e2d6631d72ec6',
+    //     userId: 8385790,
+    //     get: 'user'
+    // });
+    // feed.run();
 
 
 })(jQuery);
