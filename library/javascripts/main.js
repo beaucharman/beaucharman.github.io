@@ -15,6 +15,9 @@
 ;(function ($) {
 
 	//http://jelled.com/instagram/lookup-user-id
+	//http://instafeedjs.com/
+	//http://instagram.com/developer/clients/manage/
+	//http://instagram.com/developer/authentication/
     // var feed = new Instafeed({
     //     clientId: '91b436e4dc99488681146c25e13fcc68',
     //     accessToken: 'e6b12d77f85240828c1e2d6631d72ec6',
