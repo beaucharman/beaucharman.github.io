@@ -851,7 +851,7 @@
 
   body {
     line-height: 1.6;
-    font-family: "Garamond", Lucida, Georgia, serif;
+    font-family: "Lucida Serif", Lucida, Georgia, serif;
     font-size: 20px;
     font-weight: 400; }
 
@@ -1052,7 +1052,7 @@
    * Styles that apply to all headings for consistency.
    */
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Garamond", Lucida, Georgia, serif;
+    font-family: "proxima-nova-alt-ext-cond", sans-serif;
     font-weight: 700;
     line-height: 1.2; }
 
@@ -1252,8 +1252,73 @@
      Project
      ======================================================================== */
   body {
-    background-color: white;
-    background-image: url("../images/ricepaper2.jpg"); } }
+    background-color: white; }
+
+  /**
+   *
+   * Heading
+   *
+   */
+  .site-title__photo {
+    border-radius: 400px;
+    margin-top: 1.25em; }
+
+  .site-heading {
+    text-transform: uppercase;
+    font-family: "proxima-nova-alt-ext-cond", sans-serif;
+    font-weight: 700; }
+
+  body {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* font-family: "proxima-nova", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif; */ }
+
+  .social-links__list {
+    list-style: none;
+    padding-left: 0; }
+
+  .page-header .social-links__list {
+    margin-bottom: 0; }
+
+  .social-links__item--anchor, .social-links__item--anchor:link, .social-links__item--anchor:visited {
+    text-decoration: none; }
+
+  .github-widget {
+    margin: 0.75em 0; }
+
+  .github-widget .github-box-content {
+    min-height: 100px; }
+
+  .github-widget .updated {
+    max-width: 50%;
+    line-height: 1.2 !important; }
+
+  .github-box .github-box-download {
+    height: auto !important; }
+
+  .github-box .github-box-title .github-stats a {
+    height: 16px !important; }
+
+  .page-footer {
+    font-size: 0.8em; }
+
+  /**
+   *
+   *	Resume
+   *
+   */
+  /*dl*/
+  .resume-contact {
+    /*dt*/
+    /*dd*/ }
+    .resume-contact .contact-entry {
+      text-transform: uppercase;
+      color: #4f83cf; }
+    .resume-contact .contact-label {
+      font-size: 0.9;
+      color: #bbbbbb;
+      font-style: italic; } }
 /* ========================================================================
    Print
    ======================================================================== */

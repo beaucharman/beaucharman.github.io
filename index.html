@@ -11,64 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="library/stylesheets/main.css">
-		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<script type="text/javascript" src="//use.typekit.net/vsn2ivp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-		<style type="text/css">
-
-		body {
-			font-weight: 400;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			/* font-family: "proxima-nova", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif; */
-		}
-
-		.site-heading {
-			/* font-family: "proxima-nova", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif; */
-			font-weight: 300;
-		}
-
-		.social-links__list {
-			list-style: none;
-			padding-left: 0;
-		}
-
-		.page-header .social-links__list {
-			margin-bottom: 0;
-		}
-
-		.social-links__item--anchor, .social-links__item--anchor:link, .social-links__item--anchor:visited {
-			text-decoration: none;
-		}
-
-		.github-widget {
-			margin: 0.75em 0;
-		}
-
-		.github-widget .github-box-content {
-			min-height: 100px;
-		}
-
-		.github-widget .updated {
-			max-width: 50%;
-			line-height: 1.2 !important;
-		}
-
-		.github-box .github-box-download {
-			height: auto !important;
-		}
-
-		.github-box .github-box-title .github-stats a {
-			height: 16px !important;
-		}
-
-		.page-footer {
-			font-size: 0.8em;
-		}
-
-		</style>
 
 		<!-- <script src="library/javascripts/vendor/modernizr.min.js"></script> -->
 
@@ -88,16 +34,49 @@
 
 					<div class="row">
 
-						<div class="column grid--4">
+						<div class="column grid--3">
 
-							<img src="library/images/portfolio.jpg" alt="Photo of Beau" style="border-radius: 400px; margin-top: 3.5em;">
+							<img class="site-title__photo" src="library/images/portfolio.jpg" alt="Photo of Beau">
 
 						</div>
 
-						<div class="column grid--8">
+						<div class="column grid--9">
+
+							<style>
+
+								.page-header__sub-title {
+									font-size: 1.5em;
+									line-height: 1.2;
+								}
+
+								.custom-one {
+									font-family: 'hwt-slab-columbian', sans-serif;
+									font-size: 1.1em;
+								}
+
+								.custom-three {
+									font-family: sans-serif;
+									font-size: 1.1em;
+									letter-spacing: -1px;
+								}
+
+								.custom-six {
+									font-family: "ubuntu-mono",sans-serif;
+								}
+
+							</style>
 
 							<h1 class="site-heading">Beau Charman</h1>
-							<p class="page-header__sub-title">Tech lead and front end web developer <a href="http://www.twenty4.com.au/" title="visit twenty4's site">twenty4</a>, musician, HTML/CSS/JavaScript lover, WordPress &amp; burrito enthusiast, amateur photographer.</p>
+							<p class="page-header__sub-title">
+								<span class="custom-one">Tech lead </span>
+								<span class="custom-two">&amp; </span>
+								<span class="custom-three">front end web developer </span>
+								<span class="custom-four"><a href="http://www.twenty4.com.au/" title="visit twenty4's site">twenty4</a>, </span>
+								<span class="custom-five">musician, </span>
+								<span class="custom-six">HTML/CSS/JavaScript lover, </span>
+								<span class="custom-seven">WordPress &amp; burrito enthusiast, </span>
+								<span class="custom-eight">amateur photographer.</span>
+							</p>
 
 							<ul class="social-links__list row">
 								<li class="social-links__item social-links__item--github column grid--3">

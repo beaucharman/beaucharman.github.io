@@ -142,9 +142,9 @@ $fonts:                          $base__font_directory_path; // alias
 
 // Font families
 $base__font_family__serif:       "Lucida Serif", Lucida, Georgia, serif;
-$base__font_family__serif:       "Garamond", Lucida, Georgia, serif;
+//$base__font_family__serif:     "Garamond", Lucida, Georgia, serif;
 $base__font_family__sans_serif:  "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$base__font_family__condensed:   "proxima-nova-extra-condensed";
+$base__font_family__condensed:   "proxima-nova-alt-ext-cond", sans-serif;
 $base__font_family__monospace:   Consolas, monaco, monospace;
 
 // Text
@@ -199,6 +199,6 @@ $headings:                       h1 $h1__font_size alpha,
                                  h6 $h6__font_size zeta;
 
 // Heading characteristics
-$headings__font_family:          $base__font_family__serif;
+$headings__font_family:          $base__font_family__condensed;
 $headings__font_weight:          $font_weight__boldest;
 $headings__line_height:          1.2;
