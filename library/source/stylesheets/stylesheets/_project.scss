@@ -22,6 +22,10 @@ body {
   //background-image: image-url('handmadepaper.png');
 }
 
+.page-wrap {
+	border-top: 0.25em solid $brand_color__primary;
+}
+
 /**
  *
  * Heading
@@ -30,7 +34,7 @@ body {
 .site-title__photo {
 	border-radius: 400px;
 	margin-top: 1.25em;
-	max-height: 255px;
+	max-height: 200px;
 
 }
 
@@ -55,7 +59,10 @@ body {
 
 
 .site-heading {
-	margin-bottom: 0;
+
+	@include breakpoint () {
+		margin-bottom: 0;
+	}
 }
 
 .site-heading {
