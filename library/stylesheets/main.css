@@ -1,5 +1,5 @@
 @media screen {
-  /* normalize.css v2.1.2 | MIT License | git.io/normalize */
+  /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
   /* ========================================================================
      HTML5 display definitions
      ======================================================================== */
@@ -122,6 +122,7 @@
    */
   hr {
     -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 0; }
 
@@ -284,6 +285,8 @@
    */
   input[type="checkbox"],
   input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     /* 1 */
     padding: 0;
@@ -425,8 +428,8 @@
     float: left; }
 
   .float-right {
-    float: right; }
-
+    float: right; } }
+@media screen {
   /**
    * Collapsible horizontal list
    */
@@ -436,8 +439,15 @@
       margin-right: 1.5em;
       float: left; }
       .list--horizontal li:last-child {
-        margin-right: 0; }
+        margin-right: 0; } }
+@media screen and (max-width: 480px) {
+  .list--collapse li {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-right: 0;
+    float: none; } }
 
+@media screen {
   .list--no-bullet {
     list-style-type: none;
     padding-left: 0; }
@@ -521,6 +531,9 @@
   .container {
     margin: 0 auto;
     padding: 0.75em;
+    max-width: 960px; }
+
+  .container__narrow {
     max-width: 720px; }
 
   /**
@@ -552,24 +565,109 @@
    * These are example column class selectors,
    * given there is a 12 column system in play.
    */
-  /* 1/12 */
-  /* 1/6 */
-  /* 4 colums | 1 fourth */
-  /* 3 colums | 1 third */
-  /*5/12 */
-  /* 2 columns | 1 half */
-  /* 7/12*/
-  /* 2 thirds column */
-  /* 3/4 column */
-  /* 5/6 column */
-  /* 11/12 column */
-  /* Full width column */
+  /* 1/12 */ }
+@media screen and (min-width: 480px) {
+  .grid--1 {
+    width: 8.33333%; } }
+
+@media screen {
+  /* 1/6 */ }
+@media screen and (min-width: 480px) {
+  .grid--2 {
+    width: 16.66667%; } }
+
+@media screen {
+  /* 4 colums | 1 fourth */ }
+@media screen and (min-width: 480px) {
+  .grid--3 {
+    width: 25%; } }
+
+@media screen {
+  /* 3 colums | 1 third */ }
+@media screen and (min-width: 480px) {
+  .grid--4 {
+    width: 33.33333%; } }
+
+@media screen {
+  /*5/12 */ }
+@media screen and (min-width: 480px) {
+  .grid--5 {
+    width: 41.66667%; } }
+
+@media screen {
+  /* 2 columns | 1 half */ }
+@media screen and (min-width: 480px) {
+  .grid--6 {
+    width: 50%; } }
+
+@media screen {
+  /* 7/12*/ }
+@media screen and (min-width: 480px) {
+  .grid--7 {
+    width: 58.33333%; } }
+
+@media screen {
+  /* 2 thirds column */ }
+@media screen and (min-width: 480px) {
+  .grid--8 {
+    width: 66.66667%; } }
+
+@media screen {
+  /* 3/4 column */ }
+@media screen and (min-width: 480px) {
+  .grid--9 {
+    width: 75%; } }
+
+@media screen {
+  /* 5/6 column */ }
+@media screen and (min-width: 480px) {
+  .grid--10 {
+    width: 83.33333%; } }
+
+@media screen {
+  /* 11/12 column */ }
+@media screen and (min-width: 480px) {
+  .grid--11 {
+    width: 91.66667%; } }
+
+@media screen {
+  /* Full width column */ }
+@media screen and (min-width: 480px) {
+  .grid--12 {
+    width: 100%; } }
+
+@media screen {
   /**
    * Common offset declarations
    * ========================================================================
    * Used in conjunction with .grid--#, and will add the allocated amount of
    * columns of space to the left of the current column.
-   */
+   */ }
+@media screen and (min-width: 480px) {
+  .grid--offset--2 {
+    margin-left: 16.66667%; } }
+
+@media screen and (min-width: 480px) {
+  .grid--offset--3 {
+    margin-left: 25%; } }
+
+@media screen and (min-width: 480px) {
+  .grid--offset--4 {
+    margin-left: 33.33333%; } }
+
+@media screen and (min-width: 480px) {
+  .grid--offset--6 {
+    margin-left: 50%; } }
+
+@media screen and (min-width: 480px) {
+  .grid--offset--8 {
+    margin-left: 66.66667%; } }
+
+@media screen and (min-width: 480px) {
+  .grid--offset--9 {
+    margin-left: 75%; } }
+
+@media screen {
   /**
    * Satic columns
    * ====================================
@@ -590,9 +688,25 @@
    * auto collapsing.
    */
   .grid--cascade--12-6-3 {
-    width: 100%; }
+    width: 100%; } }
+  @media screen and (min-width: 480px) {
+    .grid--cascade--12-6-3 {
+      width: 50%; } }
+  @media screen and (min-width: 720px) {
+    .grid--cascade--12-6-3 {
+      width: 25%; } }
+
+@media screen {
   .grid--cascade--6-4-2 {
-    width: 50%; }
+    width: 50%; } }
+  @media screen and (min-width: 480px) {
+    .grid--cascade--6-4-2 {
+      width: 33.33333%; } }
+  @media screen and (min-width: 720px) {
+    .grid--cascade--6-4-2 {
+      width: 16.66667%; } }
+
+@media screen {
   /* ========================================================================
      Global
      ======================================================================== */
@@ -642,13 +756,29 @@
    * Blockquote variations
    */
   .blockquote--pull-left {
-    margin-right: 1.5em; }
+    margin-right: 1.5em; } }
+  @media screen and (min-width: 720px) {
+    .blockquote--pull-left {
+      float: left; } }
+
+@media screen {
   .blockquote--pull-right {
     margin-left: 1.5em;
     padding-left: 0;
     padding-right: 1.5em;
     border-left: none;
-    border-right: 0.5em solid #4f83cf; }
+    border-right: 0.5em solid #4f83cf; } }
+  @media screen and (min-width: 720px) {
+    .blockquote--pull-right {
+      float: right; } }
+
+@media screen and (min-width: 720px) {
+  .blockquote--pull-left,
+  .blockquote--pull-right {
+    width: 45%;
+    margin-bottom: 1.5em; } }
+
+@media screen {
   /**
    * Source code
    */
@@ -721,8 +851,8 @@
 
   body {
     line-height: 1.6;
-    font-family: "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-    font-size: 18px;
+    font-family: "Garamond", Lucida, Georgia, serif;
+    font-size: 20px;
     font-weight: 400; }
 
   html,
@@ -730,7 +860,7 @@
   input,
   select,
   textarea {
-    color: white; }
+    color: #333333; }
 
   p,
   blockquote,
@@ -922,7 +1052,7 @@
    * Styles that apply to all headings for consistency.
    */
   h1, h2, h3, h4, h5, h6 {
-    font-family: "proxima-nova-extra-condensed";
+    font-family: "Garamond", Lucida, Georgia, serif;
     font-weight: 700;
     line-height: 1.2; }
 
@@ -930,7 +1060,7 @@
    * Hero titles, for that extra attention
    */
   .hero-title {
-    font-size: 94.5px; }
+    font-size: 105px; }
 
   /**
    * Styles for related sub headings
@@ -1004,14 +1134,14 @@
   a:link,
   a:visited {
     text-decoration: underline;
-    color: #d4baef; }
+    color: #ad7ce1; }
 
   a:hover,
   a:focus {
-    color: #ad7ce1; }
+    color: #863ed3; }
 
   a:active {
-    color: #fbf8fd; }
+    color: #d4baef; }
 
   /* Buttons
   ======================================================================== */
@@ -1031,10 +1161,9 @@
     border-bottom-color: #c4c4c4;
     text-shadow: 0 1px 0 #f7f7f7;
     background-color: #dddddd;
-    background-image: -moz-linear-gradient(top, #fcfcfc, #dddddd);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#dddddd));
     background-image: -webkit-linear-gradient(top, #fcfcfc, #dddddd);
-    background-image: -o-linear-gradient(top, #fcfcfc, #dddddd);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dddddd));
     background-image: linear-gradient(to bottom, #fcfcfc, #dddddd);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFCFCFC', endColorstr='#FFDDDDDD', GradientType=0); }
@@ -1042,10 +1171,9 @@
     .btn:link:hover,
     .btn:visited:hover {
       background-color: #ececec;
-      background-image: -moz-linear-gradient(top, #f7f7f7, #ececec);
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#ececec));
       background-image: -webkit-linear-gradient(top, #f7f7f7, #ececec);
-      background-image: -o-linear-gradient(top, #f7f7f7, #ececec);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#ececec));
       background-image: linear-gradient(to bottom, #f7f7f7, #ececec);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF7F7F7', endColorstr='#FFECECEC', GradientType=0); }
@@ -1053,13 +1181,13 @@
     .btn:link:active,
     .btn:visited:active {
       background-color: #dddddd;
-      background-image: -moz-linear-gradient(top, #d8d8d8, #dddddd);
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d8d8d8), to(#dddddd));
       background-image: -webkit-linear-gradient(top, #d8d8d8, #dddddd);
-      background-image: -o-linear-gradient(top, #d8d8d8, #dddddd);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d8d8), to(#dddddd));
       background-image: linear-gradient(to bottom, #d8d8d8, #dddddd);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD8D8D8', endColorstr='#FFDDDDDD', GradientType=0);
+      -webkit-box-shadow: inset 0 1px 8px -2px rgba(0, 0, 0, 0.4);
       box-shadow: inset 0 1px 8px -2px rgba(0, 0, 0, 0.4); }
 
   /* Form elements
@@ -1124,114 +1252,8 @@
      Project
      ======================================================================== */
   body {
-    background-color: #555555; } }
-@media screen and (max-width: 480px) {
-  .list--collapse li {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    margin-right: 0;
-    float: none; } }
-
-@media screen and (min-width: 480px) {
-  .grid--1 {
-    width: 8.33333%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--2 {
-    width: 16.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--3 {
-    width: 25%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--4 {
-    width: 33.33333%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--5 {
-    width: 41.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--6 {
-    width: 50%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--7 {
-    width: 58.33333%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--8 {
-    width: 66.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--9 {
-    width: 75%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--10 {
-    width: 83.33333%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--11 {
-    width: 91.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--12 {
-    width: 100%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--2 {
-    margin-left: 16.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--3 {
-    margin-left: 25%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--4 {
-    margin-left: 33.33333%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--6 {
-    margin-left: 50%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--8 {
-    margin-left: 66.66667%; } }
-
-@media screen and (min-width: 480px) {
-  .grid--offset--9 {
-    margin-left: 75%; } }
-
-  @media screen and (min-width: 480px) {
-    .grid--cascade--12-6-3 {
-      width: 50%; } }
-  @media screen and (min-width: 720px) {
-    .grid--cascade--12-6-3 {
-      width: 25%; } }
-
-  @media screen and (min-width: 480px) {
-    .grid--cascade--6-4-2 {
-      width: 33.33333%; } }
-  @media screen and (min-width: 720px) {
-    .grid--cascade--6-4-2 {
-      width: 16.66667%; } }
-
-  @media screen and (min-width: 720px) {
-    .blockquote--pull-left {
-      float: left; } }
-
-  @media screen and (min-width: 720px) {
-    .blockquote--pull-right {
-      float: right; } }
-
-@media screen and (min-width: 720px) {
-  .blockquote--pull-left,
-  .blockquote--pull-right {
-    width: 45%;
-    margin-bottom: 1.5em; } }
-
+    background-color: white;
+    background-image: url("../images/ricepaper2.jpg"); } }
 /* ========================================================================
    Print
    ======================================================================== */
@@ -1239,6 +1261,7 @@
   * {
     background: transparent !important;
     color: #000 !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important; }
 
@@ -1274,7 +1297,6 @@
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
