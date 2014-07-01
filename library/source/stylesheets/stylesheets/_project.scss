@@ -30,6 +30,32 @@ body {
 .site-title__photo {
 	border-radius: 400px;
 	margin-top: 1.25em;
+	max-height: 255px;
+
+}
+
+.page-header__sub-title {
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+
+
+
+.fa {
+	min-width: 1.25em;
+	text-align: center;
+}
+
+.page-footer {
+	font-size: 0.7em;
+	color: #999;
+	margin-top: 2.25em;
+	text-align: center;
+}
+
+
+.site-heading {
+	margin-bottom: 0;
 }
 
 .site-heading {
