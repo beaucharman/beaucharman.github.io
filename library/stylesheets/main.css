@@ -440,7 +440,7 @@
       float: left; }
       .list--horizontal li:last-child {
         margin-right: 0; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .list--collapse li {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
@@ -566,73 +566,73 @@
    * given there is a 12 column system in play.
    */
   /* 1/12 */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--1 {
     width: 8.33333%; } }
 
 @media screen {
   /* 1/6 */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--2 {
     width: 16.66667%; } }
 
 @media screen {
   /* 4 colums | 1 fourth */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--3 {
     width: 25%; } }
 
 @media screen {
   /* 3 colums | 1 third */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--4 {
     width: 33.33333%; } }
 
 @media screen {
   /*5/12 */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--5 {
     width: 41.66667%; } }
 
 @media screen {
   /* 2 columns | 1 half */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--6 {
     width: 50%; } }
 
 @media screen {
   /* 7/12*/ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--7 {
     width: 58.33333%; } }
 
 @media screen {
   /* 2 thirds column */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--8 {
     width: 66.66667%; } }
 
 @media screen {
   /* 3/4 column */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--9 {
     width: 75%; } }
 
 @media screen {
   /* 5/6 column */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--10 {
     width: 83.33333%; } }
 
 @media screen {
   /* 11/12 column */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--11 {
     width: 91.66667%; } }
 
 @media screen {
   /* Full width column */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--12 {
     width: 100%; } }
 
@@ -643,27 +643,27 @@
    * Used in conjunction with .grid--#, and will add the allocated amount of
    * columns of space to the left of the current column.
    */ }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--2 {
     margin-left: 16.66667%; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--3 {
     margin-left: 25%; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--4 {
     margin-left: 33.33333%; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--6 {
     margin-left: 50%; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--8 {
     margin-left: 66.66667%; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .grid--offset--9 {
     margin-left: 75%; } }
 
@@ -689,7 +689,7 @@
    */
   .grid--cascade--12-6-3 {
     width: 100%; } }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 520px) {
     .grid--cascade--12-6-3 {
       width: 50%; } }
   @media screen and (min-width: 720px) {
@@ -699,7 +699,7 @@
 @media screen {
   .grid--cascade--6-4-2 {
     width: 50%; } }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 520px) {
     .grid--cascade--6-4-2 {
       width: 33.33333%; } }
   @media screen and (min-width: 720px) {
@@ -854,7 +854,7 @@
     font-family: "Lucida Serif", Lucida, Georgia, serif;
     font-size: 16px;
     font-weight: 400; } }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 520px) {
     body {
       font-size: 20px; } }
 
@@ -1284,7 +1284,7 @@
     color: #999;
     margin-top: 2.25em;
     text-align: center; } }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .site-heading {
     margin-bottom: 0; } }
 
@@ -1302,8 +1302,29 @@
 
   .social-links__list {
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    font-size: 1.5em; } }
+  @media screen and (min-width: 520px) {
+    .social-links__list {
+      font-size: 1em; } }
 
+@media screen {
+  .social-links__item {
+    margin: 0; }
+
+  .social-links__item--anchor {
+    display: block;
+    padding: 0.25em;
+    border-top: 1px solid #ad7ce1; }
+    .social-links__item:last-child .social-links__item--anchor {
+      border-bottom: 1px solid #ad7ce1; } }
+  @media screen and (min-width: 520px) {
+    .social-links__item--anchor {
+      border-top: none; }
+      .social-links__item:last-child .social-links__item--anchor {
+        border-bottom: none; } }
+
+@media screen {
   .page-header .social-links__list {
     margin-bottom: 0; }
 

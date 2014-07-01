@@ -81,6 +81,35 @@ body {
 .social-links__list {
 	list-style: none;
 	padding-left: 0;
+	font-size: 1.5em;
+
+	@include breakpoint () {
+		font-size: 1em;
+	}
+}
+
+.social-links__item {
+	margin: 0;
+}
+
+.social-links__item--anchor {
+	display: block;
+	padding: 0.25em;
+	border-top: 1px solid $brand_color__secondary;
+
+	.social-links__item:last-child & {
+		border-bottom: 1px solid $brand_color__secondary;
+	}
+
+	@include breakpoint () {
+
+		border-top: none;
+
+		.social-links__item:last-child & {
+			border-bottom: none;
+		}
+
+	}
 }
 
 .page-header .social-links__list {
