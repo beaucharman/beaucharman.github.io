@@ -81,6 +81,9 @@ body {
 .social-links__list {
 	list-style: none;
 	padding-left: 0;
+}
+
+.social-links__item {
 	font-size: 1.5em;
 
 	@include breakpoint () {

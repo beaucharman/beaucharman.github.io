@@ -1302,10 +1302,12 @@
 
   .social-links__list {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0; }
+
+  .social-links__item {
     font-size: 1.5em; } }
   @media screen and (min-width: 520px) {
-    .social-links__list {
+    .social-links__item {
       font-size: 1em; } }
 
 @media screen {
