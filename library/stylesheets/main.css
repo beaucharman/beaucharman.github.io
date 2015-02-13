@@ -1275,7 +1275,7 @@
     font-size: 1.5em;
     line-height: 1.2; }
     
-  .page-header__sub-title a:hover{
+  .page-header__sub-title a {
     text-decoration: none;
   }
 
