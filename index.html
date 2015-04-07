@@ -103,6 +103,10 @@
 					</ul>
 
 				</div>
+				
+				<div>
+					<p>Beau is currently listening to <a id="lastfm" href="http://www.last.fm/user/rocktronica"></a>.</p>
+				</div>
 
 			</main>
 
@@ -123,6 +127,12 @@
 		<script>window.jQuery || document.write('<script src="library/javascripts/vendor/jquery.min.js"><\/script>')</script>
 		<script src="library/javascripts/plugins.js"></script>
 		<script src="library/javascripts/main.js"></script>
+		<script>
+			$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rocktronica&api_key=ef21ca5e745c2aa03d9f3120444d98e9&format=json', function(data) {
+				var track = data.recenttracks.track[0]
+  				$('#lastfm').html(track.artist["#text"] + " - " + track.name)
+			});
+		</script>
 
 	</body>
 </html>
