@@ -27,8 +27,12 @@ html {
 body {
   line-height: $base__line_height;
   font-family: $base__font_family;
-  font-size: $base__font_size;
+  font-size: $base__font_size - 4;
   font-weight: $font_weight__normal;
+
+  @include breakpoint () {
+    font-size: $base__font_size;
+  }
 }
 
 html,

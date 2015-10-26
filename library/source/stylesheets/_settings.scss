@@ -30,12 +30,12 @@ $debug_mode:                     false;
 
 // Brand color
 $brand_color__primary:           #4f83cf;
-$brand_color__secondary:         #D4BAEF;
-$brand_color__ternary:           #555;
+$brand_color__secondary:         #ad7ce1;
+$brand_color__ternary:           #333;
 
 // Display color
-$foreground_color:               #fff;
-$background_color:               #555;
+$foreground_color:               #333;
+$background_color:               #fff;
 
 // Grayscale
 $black_10:                       darken(#fff, 10%);
@@ -81,7 +81,7 @@ $alerts:                         success $alert__color__success,
 // ======================================================================== /
 
 // Base pixel value
-$base__pixel_value:              18px;
+$base__pixel_value:              20px;
 
 // base border radius
 $base__border_radius:            3px;
@@ -91,7 +91,7 @@ $base__border_radius:            3px;
 $global__border_box_sizing:      true;
 
 // Display breakpoints
-$display__narrow:                480px;
+$display__narrow:                520px;
 $display__medium:                720px;
 $display__desktop:               960px;
 $display__wide:                  1140px;
@@ -117,7 +117,7 @@ $grid__float_breakpoint:         $display__narrow;
 
 // Set the page wrap's
 // max width
-$base__max_width:                $display__medium;
+$base__max_width:                $display__desktop;
 
 
 
@@ -127,11 +127,11 @@ $base__max_width:                $display__medium;
 
 // Image location path
 // (omit trailing slash)
-$base__image_directory_path:     "relative/path/to/images/from/main/css";
+$base__image_directory_path:     "../images";
 $images:                         $base__image_directory_path; // alias
 
 // Font source location
-$base__font_directory_path:      "relative/path/to/fonts/from/main/css";
+$base__font_directory_path:      "../fonts";
 $fonts:                          $base__font_directory_path; // alias
 
 
@@ -142,8 +142,9 @@ $fonts:                          $base__font_directory_path; // alias
 
 // Font families
 $base__font_family__serif:       "Lucida Serif", Lucida, Georgia, serif;
+//$base__font_family__serif:     "Garamond", Lucida, Georgia, serif;
 $base__font_family__sans_serif:  "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-$base__font_family__condensed:   "proxima-nova-extra-condensed";
+$base__font_family__condensed:   "proxima-nova-alt-ext-cond", sans-serif;
 $base__font_family__monospace:   Consolas, monaco, monospace;
 
 // Text
@@ -169,7 +170,7 @@ $font_weight__bold:              500;
 $font_weight__boldest:           700;
 
 // Font characteristics
-$base__font_family:              $base__font_family__sans_serif;
+$base__font_family:              $base__font_family__serif;
 $base__font_weight:              $font_weight__normal;
 $base__line_height:              1.6;
 

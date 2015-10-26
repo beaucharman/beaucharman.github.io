@@ -19,4 +19,150 @@
 
 body {
   background-color: $background_color;
+  //background-image: image-url('handmadepaper.png');
+}
+
+.page-wrap {
+	border-top: 0.25em solid $brand_color__secondary;
+}
+
+/**
+ *
+ * Heading
+ *
+ */
+.site-title__photo {
+	border-radius: 400px;
+	margin-top: 2.25em;
+	max-height: 200px;
+
+}
+
+.page-header__sub-title {
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+
+
+
+.fa {
+	min-width: 1.25em;
+	text-align: center;
+}
+
+.page-footer {
+	font-size: 0.7em;
+	color: #999;
+	margin-top: 2.25em;
+	text-align: center;
+}
+
+
+.site-heading {
+
+	@include breakpoint () {
+		margin-bottom: 0;
+	}
+}
+
+.site-heading {
+	text-transform: uppercase;
+	font-family: $base__font_family__condensed;
+	font-weight: 700;
+}
+
+body {
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* font-family: "proxima-nova", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif; */
+}
+
+.social-links__list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.social-links__item {
+	font-size: 1.5em;
+
+	@include breakpoint () {
+		font-size: 1em;
+	}
+}
+
+.social-links__item {
+	margin: 0;
+}
+
+.social-links__item--anchor {
+	display: block;
+	padding: 0.25em;
+	border-top: 1px solid $brand_color__secondary;
+
+	.social-links__item:last-child & {
+		border-bottom: 1px solid $brand_color__secondary;
+	}
+
+	@include breakpoint () {
+
+		border-top: none;
+
+		.social-links__item:last-child & {
+			border-bottom: none;
+		}
+	}
+}
+
+.page-header .social-links__list {
+	margin-bottom: 0;
+}
+
+.social-links__item--anchor, .social-links__item--anchor:link, .social-links__item--anchor:visited {
+	text-decoration: none;
+}
+
+.github-widget {
+	margin: 0.75em 0;
+}
+
+.github-widget .github-box-content {
+	min-height: 100px;
+}
+
+.github-widget .updated {
+	max-width: 50%;
+	line-height: 1.2 !important;
+}
+
+.github-box .github-box-download {
+	height: auto !important;
+}
+
+.github-box .github-box-title .github-stats a {
+	height: 16px !important;
+}
+
+.page-footer {
+	font-size: 0.8em;
+}
+
+
+/**
+ *
+ *	Resume
+ *
+ */
+ /*dl*/.resume-contact {
+
+	/*dt*/.contact-entry {
+		text-transform: uppercase;
+		color: $brand_color__primary;
+	}
+
+	/*dd*/.contact-label {
+		font-size: 0.9;
+		color: $grey__light;
+		font-style: italic;
+	}
 }
