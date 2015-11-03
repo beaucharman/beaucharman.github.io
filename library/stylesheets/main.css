@@ -1082,7 +1082,7 @@
   ul,
   ol,
   dl {
-    margin: 1.5em 0; }
+    margin: 1em 0; }
 
   /**
    * Lead elements, paragraphs maybe?
@@ -1274,7 +1274,7 @@
   .page-header__sub-title {
     font-size: 1.5em;
     line-height: 1.2; }
-    
+
   .page-header__sub-title a {
     text-decoration: none;
   }
