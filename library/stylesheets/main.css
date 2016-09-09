@@ -851,7 +851,8 @@
 
   body {
     line-height: 1.6;
-    font-family: "Lucida Serif", Lucida, Georgia, serif;
+    /* font-family: "Lucida Serif", Lucida, Georgia, serif; */
+    font-family: 'Merriweather', serif;
     font-size: 16px;
     font-weight: 400; } }
   @media screen and (min-width: 520px) {
