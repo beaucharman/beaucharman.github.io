@@ -852,7 +852,8 @@
   body {
     line-height: 1.6;
     /* font-family: "Lucida Serif", Lucida, Georgia, serif; */
-    font-family: 'Merriweather', serif;
+     font-family: "garamond-premier-pro",serif;
+    /*font-family: 'Merriweather', serif;*/
     font-size: 16px;
     font-weight: 400; } }
   @media screen and (min-width: 520px) {
@@ -1057,7 +1058,8 @@
    * Styles that apply to all headings for consistency.
    */
   h1, h2, h3, h4, h5, h6 {
-    font-family: "proxima-nova-alt-ext-cond", sans-serif;
+    /* font-family: "proxima-nova-alt-ext-cond", sans-serif; */
+    font-family: "league-gothic",sans-serif;
     font-weight: 700;
     line-height: 1.2; }
 
@@ -1274,7 +1276,7 @@
 
   .page-header__sub-title {
     margin-right: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.4;
   }
 
@@ -1298,8 +1300,9 @@
 @media screen {
   .site-heading {
     text-transform: uppercase;
-    font-family: "proxima-nova-alt-ext-cond", sans-serif;
-    font-weight: 700; }
+    /* font-family: "proxima-nova-alt-ext-cond", sans-serif; */
+    font-family: "league-gothic",sans-serif;
+    font-weight: 200; }
 
   body {
     font-weight: 400;
