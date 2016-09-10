@@ -9,12 +9,9 @@
 # Technology Colophon
 
   - Built with HTML5, CSS3, JavaScript and love.
-
   - Typefaces awesomely served by typekit.com
-    Proxima Nova Alt Extra Condensed by Mark Simonson Studio, and Garamond Premier Pro Display by Adobe.
-
+    -- League Gothic by The League of Moveable Type, and Garamond Premier Pro from Adobe.
   - Icon fonts by http://fortawesome.github.com/Font-Awesome/
-
   - Analytics captured by http://www.google.com.au/analytics/
 
 # Thanks
