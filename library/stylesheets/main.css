@@ -440,7 +440,7 @@
       float: left; }
       .list--horizontal li:last-child {
         margin-right: 0; } }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .list--collapse li {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
@@ -530,7 +530,7 @@
    */
   .container {
     margin: 0 auto;
-    padding: 0.75em;
+    padding: 0.5em 0.75em;
     max-width: 960px; }
 
   .container__narrow {
@@ -566,73 +566,89 @@
    * given there is a 12 column system in play.
    */
   /* 1/12 */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--1 {
     width: 8.33333%; } }
 
 @media screen {
   /* 1/6 */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--2 {
     width: 16.66667%; } }
 
 @media screen {
   /* 4 colums | 1 fourth */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--3 {
     width: 25%; } }
 
 @media screen {
   /* 3 colums | 1 third */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--4 {
     width: 33.33333%; } }
 
 @media screen {
+  .grid--12-680 {
+    width: 100%; } }
+
+@media screen and (min-width: 420px) {
+  .grid--6-420 {
+    width: 50%; } }
+
+@media screen and (min-width: 820px) {
+  .grid--4-820 {
+    width: 33.33333%; } }
+
+@media screen and (min-width: 640px) {
+  .grid--4-680 {
+    width: 33.33333%; } }
+
+@media screen {
   /*5/12 */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--5 {
     width: 41.66667%; } }
 
 @media screen {
   /* 2 columns | 1 half */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--6 {
     width: 50%; } }
 
 @media screen {
   /* 7/12*/ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--7 {
     width: 58.33333%; } }
 
 @media screen {
   /* 2 thirds column */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--8 {
     width: 66.66667%; } }
 
 @media screen {
   /* 3/4 column */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--9 {
     width: 75%; } }
 
 @media screen {
   /* 5/6 column */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--10 {
     width: 83.33333%; } }
 
 @media screen {
   /* 11/12 column */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--11 {
     width: 91.66667%; } }
 
 @media screen {
   /* Full width column */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--12 {
     width: 100%; } }
 
@@ -643,27 +659,27 @@
    * Used in conjunction with .grid--#, and will add the allocated amount of
    * columns of space to the left of the current column.
    */ }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--2 {
     margin-left: 16.66667%; } }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--3 {
     margin-left: 25%; } }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--4 {
     margin-left: 33.33333%; } }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--6 {
     margin-left: 50%; } }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--8 {
     margin-left: 66.66667%; } }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .grid--offset--9 {
     margin-left: 75%; } }
 
@@ -689,7 +705,7 @@
    */
   .grid--cascade--12-6-3 {
     width: 100%; } }
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 640px) {
     .grid--cascade--12-6-3 {
       width: 50%; } }
   @media screen and (min-width: 720px) {
@@ -699,7 +715,7 @@
 @media screen {
   .grid--cascade--6-4-2 {
     width: 50%; } }
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 640px) {
     .grid--cascade--6-4-2 {
       width: 33.33333%; } }
   @media screen and (min-width: 720px) {
@@ -856,7 +872,7 @@
     /*font-family: 'Merriweather', serif;*/
     font-size: 16px;
     font-weight: 400; } }
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 640px) {
     body {
       font-size: 20px; } }
 
@@ -1271,13 +1287,26 @@
    */
   .site-title__photo {
     border-radius: 400px;
-    margin-top: 2.25em;
-    max-height: 200px; }
+    margin-top: 2em;
+    max-height: 160px; }
+
+  @media screen and (min-width: 680px) {
+    .site-title__photo {
+      max-height: 200px;
+    }
+  }
 
   .page-header__sub-title {
     margin-right: 10px;
-    font-size: 1.3em;
-    line-height: 1.4;
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+
+  .page-header__subsub-title {
+    margin-right: 10px;
+    margin-top: 0.75em;
+    font-size: 0.9em;
+    line-height: 1.6;
   }
 
   .page-header__sub-title a {
@@ -1290,15 +1319,12 @@
 
   .page-footer {
     font-size: 0.7em;
-    color: #999;
-    margin-top: 2.25em;
-    text-align: center; } }
-@media screen and (min-width: 520px) {
-  .site-heading {
-    margin-bottom: 0; } }
+    color: #999; } }
 
 @media screen {
   .site-heading {
+    margin-top: 0.25em;
+    margin-bottom: 0;
     text-transform: uppercase;
     /* font-family: "proxima-nova-alt-ext-cond", sans-serif; */
     font-family: "league-gothic",sans-serif;
@@ -1312,11 +1338,14 @@
 
   .social-links__list {
     list-style: none;
-    padding-left: 0; }
+    margin-top: 0;
+    padding-left: 0;
+
+     }
 
   .social-links__item {
-    font-size: 1.5em; } }
-  @media screen and (min-width: 520px) {
+    font-size: 1.1em; } }
+  @media screen and (min-width: 640px) {
     .social-links__item {
       font-size: 1em; } }
 
@@ -1327,14 +1356,13 @@
   .social-links__item--anchor {
     display: block;
     padding: 0.25em;
-    border-top: 1px solid #ad7ce1; }
-    .social-links__item:last-child .social-links__item--anchor {
-      border-bottom: 1px solid #ad7ce1; } }
-  @media screen and (min-width: 520px) {
+    border-bottom: 1px solid #ad7ce1;}
+  .social-links__item:last-child .social-links__item--anchor {
+    border-bottom: 1px solid #ad7ce1; } }
+  @media screen and (min-width: 680px) {
     .social-links__item--anchor {
       border-top: none; }
-      .social-links__item:last-child .social-links__item--anchor {
-        border-bottom: none; } }
+       }
 
 @media screen {
   .page-header .social-links__list {
