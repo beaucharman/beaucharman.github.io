@@ -115,20 +115,12 @@
 
 						<div class="column grid--9 grid--offset--3">
 							<div>Hosted on <a href="https://github.com/beaucharman/beaucharman.github.io" rel="external" title="GitHub Repo">GitHub</a> <i class="fa fa-rebel"></i> Fonts served via <a href="https://typekit.com" rel="external" title="Typekit's website">TypeKit</a> <i class="fa fa-first-order"></i> View the <a href="humans.txt" title="humans.txt">Colophon</a></div>
-							<div>Beau is currently listening to <a id="lastfm" href="http://www.last.fm/user/rocktronica"> the birds singing</a> ♫</div>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script>
-			$.getJSON('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rocktronica&api_key=ef21ca5e745c2aa03d9f3120444d98e9&format=json', function(data) {
-				var track = data.recenttracks.track[0]
-  				$('#lastfm').html(track.artist["#text"] + " - " + track.name)
-			});
-		</script>
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
