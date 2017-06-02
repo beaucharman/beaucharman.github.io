@@ -1,15 +1,11 @@
 # humanstxt.org/
 
- Handcrafted with HTML, CSS, JavaScript & love by Beau Charman
+Written HTML and CSS by @beaucharman
 
-# Team
+# Technology
 
- Beau Charman -- Designer, Coder -- @beaucharman
-
-# Technology Colophon
-
-  - Built with HTML5, CSS3, JavaScript and love.
-  - Typefaces awesomely served by typekit.com
+  - Built with HTML5, CSS3 and love.
+  - Typefaces served by typekit.com
     -- League Gothic by The League of Moveable Type, and Garamond Premier Pro from Adobe.
   - Icon fonts by http://fortawesome.github.com/Font-Awesome/
   - Analytics captured by http://www.google.com.au/analytics/
@@ -23,38 +19,3 @@ You give me strength, drive, and fuel my passion for all things creative
 and beautiful and I adore and love you for that.
 
  <3
-
-               _.--""`-..
-             ,'          `.
-           ,'          __  `.
-          /|          " __   \
-         , |           / |.   .
-         |,'          !_.'|   |
-       ,'             '   |   |
-      /              |`--'|   |
-     |                `---'   |
-      .   ,                   |                       ,".
-       ._     '           _'  |                    , ' \ `
-   `.. `.`-...___,...---""    |       __,.        ,`"   L,|
-   |, `- .`._        _,-,.'   .  __.-'-. /        .   ,    \
- -:..     `. `-..--_.,.<       `"      / `.        `-/ |   .
-   `,         """"'     `.              ,'         |   |  ',,
-     `.      '            '            /          '    |'. |/
-       `.   |              \       _,-'           |       ''
-         `._'               \   '"\                .      |
-            |                '     \                `._  ,'
-            |                 '     \                 .'|
-            |                 .      \                | |
-            |                 |       L              ,' |
-            `                 |       |             /   '
-             \                |       |           ,'   /
-           ,' \               |  _.._ ,-..___,..-'    ,'
-          /     .             .      `!             ,j'
-         /       `.          /        .           .'/
-        .          `.       /         |        _.'.'
-         `.          7`'---'          |------"'_.'
-        _,.`,_     _'                ,''-----"'
-    _,-_    '       `.     .'      ,\
-    -" /`.         _,'     | _  _  _.|
-     ""--'---"""""'        `' '! |! /
-                             `" " -'
