@@ -1,6 +1,4 @@
-# Readme
-
-## beaucharman.github.io ボウ
+**beaucharman.github.io ボウ**
 
 Passionate senior front-end developer, INFJ, musician, vegan, feminist, environmentalist, human and animal rights evangelist, CSS and JavaScript writer, physics and philosophy enthusiast, Japanese fashion lover, avid cyclist, problem solver, French and Japanese language student, video gamer, minimalist neophyte, raconteur, earth explorer, emoji aficionado and amateur photographer. 🌱🦄🌈🕊💚
 
