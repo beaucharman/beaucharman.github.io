@@ -1,0 +1,39 @@
+body {
+  font-family: "garamond-premier-pro", serif;
+  background-color: white;
+}
+
+html, button, input, select, textarea {
+  color: #333333;
+}
+
+h1 {
+  font-family: "league-gothic", sans-serif;
+}
+
+a, a:link, a:visited {
+  text-decoration: underline;
+  color: #ad7ce1;
+}
+
+a:hover, a:focus {
+  color: #863ed3;
+}
+
+a:active {
+  color: #d4baef;
+}
+
+.page-wrap {
+  border-top: 0.25em solid #ad7ce1;
+}
+
+.social-links__item--anchor {
+  display: block;
+  padding: 0.25em;
+  border-bottom: 1px solid #ad7ce1;
+}
+
+.social-links__item:last-child .social-links__item--anchor {
+  border-bottom: 1px solid #ad7ce1;
+}
