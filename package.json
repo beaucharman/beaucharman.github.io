@@ -1,0 +1,24 @@
+{
+  "name": "beaucharman.github.io",
+  "version": "1.0.0",
+  "description": "**beaucharman.github.io ボウ**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beaucharman/beaucharman.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beaucharman/beaucharman.github.io/issues"
+  },
+  "homepage": "https://github.com/beaucharman/beaucharman.github.io#readme",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
+}
