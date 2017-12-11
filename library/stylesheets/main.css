@@ -114,7 +114,6 @@ p, blockquote, address, ul, ol, dl, button, input, select, textarea {
 h1 {
   margin: 0.53333em 0;
   font-size: 3em;
-  font-family: sans-serif;
   font-weight: 200;
   line-height: 1.2;
 }
@@ -233,4 +232,23 @@ body {
 
 .the-drummer {
   text-align: left;
+}
+
+.gift-ideas .donate-option {
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.gift-ideas .donate-option:hover,
+.gift-ideas .donate-option:focus {
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(236, 0, 140), -1px 1px 2px rgb(236, 0, 140), 1px -1px 2px rgb(236, 0, 140), -1px -1px 2px rgb(236, 0, 140);
+  box-shadow: 0px 5px 24px 8px rgb(236, 0, 140);
+  transform: scale(1.05);
 }
